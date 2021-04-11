@@ -1,0 +1,55 @@
+python manage.py startproject django_project
+python manage.py startapp blog/users
+
+
+python manage.py runserver
+
+
+python manage.py migrate
+
+
+python manage.py createsuperuser
+
+
+python manage.py makemigrations
+
+
+python manage.py sqlmigrate blog 0001
+
+
+python manage.py shell 
+
+from blog.models import Post
+from django.contrib.auth.models import User
+User.objects.all()
+
+User.objects.first()
+
+User.objects.filter(username = "Fowad").first()
+
+user = User.objects.filter(username = "Fowad").first()
+
+post_1 = Post(title = "Blog 1", content = "First Post Content!", author = user)
+post_1.save()
+Post.objects.all() 
+# shows there is now one post under posts, but not very descriptive
+# adding to method to Post class in models.py (dunder str method). returns the post title.
+
+post_2 = Post(title = "Blog 2", content = "Second Post Content!", author_id = user.id)
+post_2.save()
+
+post = Post.objects.first()
+post.content
+# returns content
+post.date_posted
+post.author
+post.author.email
+
+# What if I want to get all posts of the author?
+user.post_set.all()
+
+# Another way to create posts. No need to specify author, nor to post_1.save
+user.post_set.create(title = "Blog 3", content = "Third Post Content!", author_id = user.id)
+
+# Crispy forms
+pip install django-crispy-forms
