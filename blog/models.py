@@ -7,10 +7,20 @@ from django.urls import reverse
 
 class Post(models.Model):
     title = models.CharField(max_length =100)
-    content = models.TextField()
+    content = models.CharField(max_length=100)
+    # author_director_or_draw = models.CharField(max_length=100)
+    # genre = models.CharField(max_length=100)
+    # runtime = models.IntegerField()
+    # year_made = models.DateField(auto_now=False)
+    # status = models.CharField(choices = ['Recommended','Downloaded', 'Completed', 'Abandoned', 'Completed'])
+    # synopsis = models.TextField()
+    # review = models.TextField()
+    # rating = models.CharField()
+    # recommend = models.CharField(choices =['Yes','No'])
+    
     date_posted = models.DateTimeField( default = timezone.now)
-    # date_posted = models.DateTimeField( auto_now_add = True)
     # date posted auto, but you can't change the posted date
+    # date_posted = models.DateTimeField( auto_now_add = True)
     author = models.ForeignKey(User, on_delete= models.CASCADE)
     # on_delete = CASCADE deletes all posts by a user if the user is deleted
 
