@@ -25,7 +25,8 @@ SECRET_KEY = 'ec@@_3j9wln$#o#dtkfc^1#q#r*mxpi4!i0n80^%sda=xw!2j_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://fowadsapp.herokuapp.com/',
+'localhost']
 
 
 # Application definition
