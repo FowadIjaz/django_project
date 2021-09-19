@@ -1,8 +1,62 @@
-{% extends "blog/base.html" %}
-
+{% load static %}
 {% load crispy_forms_tags %}
 
-{% block content %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Focus Trucking, Inc. - Login</title>
+<!--<base href="http://www.focustr.us/flash/">--><base href=".">
+<link rel="stylesheet" type="text/css" href="{% static 'users/stylesheet.css' %}">
+<script type="text/javascript" src="{% static 'users/stylesheet.swfobject.js.download' %}"></script>
+<link rel="shortcut icon" href="http://www.focustr.us/attachment/img/0/e26426a9cae850a513ea0c1f501677e3/focus.ico">
+
+<meta name="description" content="Focus Trucking, Inc. - the best chicagoland intermodal container trucking company">
+<meta name="keywords" content="tri-axle, chassis, container, import, export, trucking, drayage, intermodal, transport, chicago,delivery, steamship, drivers, owners operators, containership, supply chain, carrier, shipper, truck, cargo, terminal, transportation, freight, shipment, equipment, logistics, truckload, port, global economy, midwest">
+<meta name="generator" content="Midgard/1.5.0/SG Vangard">
+<meta name="dc.date" content="2006-11-17">
+<meta name="lastupdated" content="2006-11-22">
+<meta name="dc.creator" content="vaclav">
+<meta name="author" content="vaclav">
+<meta name="dc.title" content="Login">
+<meta name="robots" content="all">
+</head>
+
+<body>
+<table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+  <td>
+	<div id="maincontainer">
+	<div id="header">
+		<div id="logodiv"> 
+		</div>
+		<script type="text/javascript">
+			var so = new SWFObject("/attachment/img/0/0f5d89fdffebc457c0477ea9238e5058/top_menu.swf", "logodiv", "769", "143", "7", "#43607E");
+			so.write("logodiv");
+	 	</script>
+	</div>
+	<div class="coverlayer">
+    <div class="lcccontainer">
+    <div class="lccontainer">          
+    <div class="titlediv">
+<table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+<td valign="middle">
+  <a href="http://www.focustr.us/trucking/" class="news_link">Login</a>&nbsp;
+</td>
+<td>
+  <a href="{% url 'blog-home'%}" class="closebutton">CLOSE</a>
+</td>
+
+</tr>
+</tbody></table>
+</div>
+
+<br><br>
+<div id="articlecontent"><div class="formheader">Focus dispatch</div>
+<div align="right" style="margin-top:120px">
     <div class ='content-section'>
         <form method = "POST">
             {% csrf_token %}
@@ -17,8 +71,60 @@
 
         <div class = "border-top pt-3">
             <small class = "text-muted">
-                Need an Account? <a class="ml-2" href ="{% url 'register'%}"> Sign in </a>
+                Need an Account? <a class="ml-2" href ="{% url 'register'%}"> Register </a>
             </small>
         </div>
-    </div>
-{% endblock content %}
+</div>
+<script type="text/javascript">
+ document.form.user.focus()
+</script>
+
+
+</div>
+         </div></div>
+	</div>
+	<div id="bodycontainer">
+                                <div id="menu"><div id="menulinks">
+
+     <a href="http://www.focustr.us/trucking/" class="menulinks">Home</a>
+          <a href="http://www.focustr.us/trucking/jobs" class="menulinks">Jobs</a>
+     <a href="https://www.google.com/a/focustr.us/ServiceLogin" class="menulinks">Focus m@il</a>
+     <a href="http://www.focustr.us/trucking/trace" class="menulinks">Trace</a>
+     </div>
+</div>
+		<div id="bodycontentcenter">
+		<div id="content">
+		<div id="cmscontent">
+                                </div>
+		<div id="subcontainer"></div>
+		</div>
+			<div id="flashbuttons">
+                <a href="http://www.focustr.us/trucking/contact">
+                    <img src="{% static 'users/contact.jpg' %}" border="0"></a>
+                    
+                <a href="http://maps.google.com/">
+                    <img src="{% static 'users/map.jpg' %}" border="0"></a>
+                <a href="http://www.focustr.us/trucking/links">
+                    <img src="{% static 'users/links.jpg' %}" border="0"></a>
+                <a href="http://www.focustr.us/trucking/login">
+                    <img src="{% static 'users/login.jpg' %}" border="0"></a>	
+            </div>
+			<script type="text/javascript">
+				var so = new SWFObject("bot_menu.swf", "flashbuttons", "769", "143", "7", "#43607E");
+                                                                so.addParam("wmode", "transparent");
+				so.write("flashbuttons");
+	 		</script>
+		</div>
+	</div>
+	<div id="footer">www.focustrucking.com copyright© 2021</div>
+  </div></td>
+</tr>
+</tbody></table>
+<script src="./Focus Trucking, Inc. - Login_files/urchin.js.download" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-981786-1";
+urchinTracker();
+</script>
+
+</body></html>

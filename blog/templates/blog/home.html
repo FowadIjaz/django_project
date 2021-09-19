@@ -1,41 +1,93 @@
-  
-{% extends "blog/base.html" %}
-{% block content %}
-    {% for post in posts %}
-        <article class="media content-section">
-          <img class = 'rounded-circle article-img' src = '{{post.author.profile.image.url}}'>
-          <div class="media-body">
-            <div class="article-metadata">
-              <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
-              <small class="text-muted">{{ post.date_posted|date:"F d , Y"}}</small>
-            </div>
-            <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
-            <p class="article-content">{{ post.content }}</p>
-          </div>
-        </article>
-    {% endfor %}
-    {% if is_paginated %}
-      {% if page_obj.has_previous %}
-        <a class="btn btn-outline-info mb-4" href = "?page=1">First</a>
-        <a class="btn btn-outline-info mb-4" href = "?page={{ page_obj.previous_page_number }}">Previous</a>
-      {%endif%}
+{% load static %}
 
-      {% for num in page_obj.paginator.page_range %}
-        {% if page_obj.number == num %}
-          <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
-        {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
-          <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
-        {% endif %}
-      {% endfor %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0031)http://www.focustr.us/trucking/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-      {% if page_obj.has_next %}
-        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
-        <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
-      {% endif %}
+<title>Focus Trucking, Inc. - the best Chicago intermodal container trucking company</title>
+<!--<base href="http://www.focustr.us/flash/">--><base href=".">
+<link rel="stylesheet" href="{% static 'blog/home/stylesheet.css' %}" type="text/css">
 
+<script type="text/javascript" src="{% static 'blog/home/swfobject.js.download' %}"></script>
 
-    {%endif%}
-{% endblock content %}
+<link rel="shortcut icon" href="http://www.focustr.us/attachment/img/0/e26426a9cae850a513ea0c1f501677e3/focus.ico">
 
+<meta name="description" content="Focus Trucking, Inc. - the best Chicago intermodal container trucking company">
+<meta name="keywords" content="focus trucking, focus, trucking, chicago, container, tri-axle, triaxle, chassis, import, export, drayage, intermodal, transport, delivery, steamship, drivers, owners operators, containership, supply chain, carrier, shipper, truck, cargo, terminal, transportation, freight, shipment, equipment, logistics, truckload, port, global economy, midwest">
+<meta name="verify-v1" content="3fVoI1we0vGrQbt8iEVUC4HQecdD2lSF06G2QHHd+qI=">
+<meta name="y_key" content="6292a7d643a0a81a">
+<meta name="generator" content="Midgard/1.5.0/SG Vangard">
+<meta name="dc.date" content="2006-11-17">
+<meta name="lastupdated" content="2009-2-14">
+<meta name="dc.creator" content="vaclav">
+<meta name="author" content="vaclav">
+<meta name="dc.title" content="the best Chicago intermodal container trucking company">
+<meta name="robots" content="all">
+</head>
 
-<! -- -->
+<body>
+<table cellspacing="0" cellpadding="0" border="0">
+<tbody><tr>
+  <td>
+	<div id="maincontainer">
+	<div id="header">
+		<div id="logodiv">
+
+		</div>
+		<script type="text/javascript">
+			var so = new SWFObject("/attachment/img/0/0f5d89fdffebc457c0477ea9238e5058/top_menu.swf", "logodiv", "769", "143", "7", "#43607E");
+			so.write("logodiv");
+	 	</script>
+	</div>
+
+	</div>
+	<div id="bodycontainer">
+                                <div id="menu"><div id="menulinks">
+
+     <a href="http://www.focustr.us/trucking/" class="menulinks">Home</a>
+          <a href="http://www.focustr.us/trucking/jobs" class="menulinks">Jobs</a>
+     <a href="https://www.google.com/a/focustr.us/ServiceLogin" class="menulinks">Focus m@il</a>
+     <a href="http://www.focustr.us/trucking/trace" class="menulinks">Trace</a>
+     </div>
+</div>
+		<div id="bodycontentcenter">
+		<div id="content">
+		<div id="cmscontent">          <h1>Welcome to Focus Trucking, Inc.</h1>We are a Chicago area intermodal container trucking company. Offering service since year 2000, we specialize in import-export traffic coming to Chicago through all major railroads: BNSF, Union Pacific, Norfolk Southern, CSX, Canadian Pacific and Canadian National.<br><br>Throughout the years we have built great relationships with many small and medium size freight forwarding companies and private importers. We carry interchange agreements with all steamship lines including: China Shipping, Cosco, Hanjin, Yang Ming, MSC, Hapag Lloyd, Maersk, Zim Lines, OOCL, Hamburg-Sud, United Arab, Evergreen, CMA-CGM, NYK,<br>K-Line, Mitsui OSK, APL, Hyundai.<br><br>Implementing modern technologies and allowing customers to trace their shipments and obtain rate quotes online is another step towards reaching new standards that our customers deserve.&nbsp;                                          </div>
+		<div id="subcontainer">
+<ul>
+   <li>your freight is in good hands<br><br></li>
+   <li>highly trained and safe drivers <br><br></li>
+   <li>24 hours, 7 days a week service<br><br></li>
+   <li>triaxle chassis for overweight 20' containers<br><br></li>
+   <li>online customer tools<br><br></li>
+</ul>
+</div>
+		</div>
+    <div id="flashbuttons">
+      <a href="http://www.focustr.us/trucking/contact">
+          <img src="{% static 'blog/home/contact.jpg' %}" border="0"></a>
+      <a href="http://maps.google.com/">
+          <img src="{% static 'blog/home/map.jpg' %}" border="0"></a>
+      <a href="http://www.focustr.us/trucking/links">
+          <img src="{% static 'blog/home/links.jpg' %}" border="0"></a>
+      <a href="{% url 'login'%}">
+          <img src="{% static 'blog/home/login.jpg' %}" border="0"></a>	
+  </div>
+			<script type="text/javascript">
+				var so = new SWFObject("bot_menu.swf", "flashbuttons", "769", "143", "7", "#43607E");
+				so.write("flashbuttons");
+	 		</script>
+		</div>
+	</div>
+	<div id="footer">www.focustrucking.com copyright© 2021</div>
+  </td>
+</tr>
+</tbody></table>
+<script src="./Focus Trucking, Inc. - the best Chicago intermodal container trucking company_files/urchin.js.download" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-981786-1";
+urchinTracker();
+</script>
+
+</body></html>

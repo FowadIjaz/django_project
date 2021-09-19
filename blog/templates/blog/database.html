@@ -1,0 +1,2592 @@
+{% load static %}
+<!-- saved from url=(0047)http://www.focustr.us/database?sort_by=customer -->
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Focus Trucking: Database</title>
+    <link rel="stylesheet" href="{% static 'blog/home/style.css' %}" type="text/css">
+    <link rel="shortcut icon" href="http://www.focustr.us/attachment/img/0/e26426a9cae850a513ea0c1f501677e3/focus.ico">
+    <script type="text/javascript" src="{% static 'blog/home/swfobject.js.download' %}"></script>
+</head>
+    
+<body>
+   <div id="main">
+    
+    <table cellspacing="0" cellpadding="6" border="0" style="width:999px; height: 19px;">
+    <tbody><tr>
+    <td align="left" colspan="7">&nbsp;&nbsp;<a href="http://www.focustr.us/logout"><img src="{% static 'blog/home/focuslogonew.gif' %}" border="0"></a></td>
+    
+    <td align="right" bgcolor="#FFFFFF" colspan="2" valign="bottom">
+    <iframe name="mail_frame" src="./Focus Trucking_ Database_files/chkmail.html" style="width:305px; height:24px" frameborder="0" scrolling="no"></iframe>
+    </td>
+    </tr>
+    <tr class="menutd">
+    <td align="left" width="50" class="menutd">
+    <a href="http://www.focustr.us/database?view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="menu">DISPATCH</a>
+    </td>
+    <td align="left" width="50" class="menutd">
+    <a href="http://www.focustr.us/database?sort_by=customer#" class="menu" onclick="window.open(&#39;/database?db_function=create&amp;view=&amp;sort_by=customer&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=yes,toolbar=no,menubar=no,location=no,scrollbars=auto&#39;)">CREATE</a>
+    </td>
+    <td align="left" width="50" class="menutd">
+    <a href="http://www.focustr.us/database?sort_by=customer#" class="menu" onclick="window.open(&#39;/database?db_function=status&amp;view=&amp;sort_by=customer&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=yes,toolbar=no,menubar=no,location=no,scrollbars=auto&#39;)">STATUS</a>
+    </td>
+    <td align="left" width="50" class="menutd">
+    <a href="http://www.focustr.us/database?sort_by=customer#drivers" name="drivers" class="menu" onclick="window.open(&#39;/database?db_function=drivers&amp;view=&amp;sort_by=customer&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=yes,toolbar=no,menubar=no,location=no,scrollbars=auto&#39;)">DRIVERS</a>
+    </td>
+    <td align="left" width="50" class="menutd">
+    <a href="http://www.focustr.us/quotes?view=RATED" class="menu">QUOTES</a>
+    </td>
+    <td align="left" width="50" class="menutd">
+    <a href="http://www.focustr.us/database?db_function=export&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="menu">EXPORT</a>
+    </td>
+    <td align="left" width="50" class="menutd">
+    <a href="http://www.focustr.us/database?view=SEARCH&amp;sort_by=done_date" class="menu">SEARCH</a>
+    </td>
+    <td align="right" width="100%" class="menutd">
+    <span style="padding-left: 10px"><a href="http://www.focustr.us/database?view=NOWHEELS&amp;sort_by=customer" class="menu">NOWHEELS</a></span>
+    <span style="padding-left: 10px"><a href="http://www.focustr.us/database?view=PRE%20NOTES&amp;sort_by=customer" class="menu">PRE NOTES</a></span>
+    <span style="padding-left: 10px"><a href="http://www.focustr.us/database?view=ON%20WATER&amp;sort_by=customer" class="menu">ON WATER</a></span>
+    <span style="padding-left: 10px"><a href="http://www.focustr.us/database?view=MACYS&amp;sort_by=customer" class="menu">MACYS</a></span>
+    <span style="padding-left: 10px"><a href="http://www.focustr.us/database?view=PASS&amp;sort_by=customer" class="menu">PASS</a></span>
+    <span style="padding-left: 10px"><a href="http://www.focustr.us/database?view=BILLED&amp;sort_by=done_date" class="menu">BILLED</a></span>
+    <span style="padding-left: 10px"><a href="http://www.focustr.us/database?view=DONE&amp;sort_by=done_date" class="menu">DONE</a></span>
+    </td>
+    <td class="menutd">&nbsp;
+    </td>
+    </tr>
+    </tbody></table>
+    
+    
+    
+    
+    
+    
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr><td colspan="13" style="height: 3px; font-size: 1px">&nbsp;</td></tr>
+    <tr><td colspan="13" class="headline"><a href="http://www.focustr.us/database?view=WORK&amp;sort_by=customer&amp;highlight=" class="hd">WORK</a></td></tr>
+    <tr>
+    <th>eFax</th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">CUSTOMER</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=container&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">CONTAINER #</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=lfd&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">LFD</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=appointment&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">DELIVERY/PICKUP</a></th>
+    <th>PULL</th>
+    <th>RATE</th>
+    <th>NOTE</th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=reference&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">REF #</a></th>
+    <th>SIZE</th>
+    <th>DRIVERS</th>
+    </tr>
+    <tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62459">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/43349d2abfc0a5fba7bfa58b87ce1f0d/43349d2abfc0a5fba7bfa58b87ce1f0d" onclick="change_style(&#39;62459&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62459">
+    <a href="http://www.focustr.us/database?sort_by=customer#62459" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62459&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62459&#39;)">ELBE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62459">HLXU315017</td>
+    <td width="75" class="dataline" align="center" id="d_62459">MON, SEP 13</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62459">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62459">5306</td>
+    <td width="70" class="dataline" align="center" id="g_62459"> </td>
+    <td width="135" class="dataline" title="HAPAG NS 17151321 " id="h_62459">HAPAG NS 17151321 </td>
+    <td width="70" class="dataline" align="center" id="i_62459"></td>
+    <td width="35" class="dataline" align="center" id="j_62459">20</td>
+    <td width="110" class="dataline" align="center" id="k_62459"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_61812">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/907d478a62df6d028be748e51708c71c/907d478a62df6d028be748e51708c71c" onclick="change_style(&#39;61812&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_61812">
+    <a href="http://www.focustr.us/database?sort_by=customer#61812" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=61812&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;61812&#39;)">HERREGAN ADD</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_61812">FCIU376167</td>
+    <td width="75" class="dataline" align="center" id="d_61812">FRI, JUN 25</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_61812">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_61812">891414</td>
+    <td width="70" class="dataline" align="center" id="g_61812"> </td>
+    <td width="135" class="dataline" title="CMA GLO4 OI21050273" id="h_61812">CMA GLO4 OI2105027</td>
+    <td width="70" class="dataline" align="center" id="i_61812"></td>
+    <td width="35" class="dataline" align="center" id="j_61812">20</td>
+    <td width="110" class="dataline" align="center" id="k_61812"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_61814">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/3356f019cc7a7007378b66af2adbb9ae/3356f019cc7a7007378b66af2adbb9ae" onclick="change_style(&#39;61814&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_61814">
+    <a href="http://www.focustr.us/database?sort_by=customer#61814" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=61814&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;61814&#39;)">HERREGAN ADD</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_61814">CONU209016</td>
+    <td width="75" class="dataline" align="center" id="d_61814">FRI, JUN 25</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_61814">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_61814">891150</td>
+    <td width="70" class="dataline" align="center" id="g_61814">OFF HIRE</td>
+    <td width="135" class="dataline" title="CMA GLO4 OI21050028
+    DEPOT INF: 
+    
+    ILLIN. TRSP. 20012 W. SOUTH ARSENAL RD. WILMINGTON, IL 60481 TELEPHONE: (708) 333-7510FAX: (708)-333-7509 EMAIL: INFO@ILLINOISTRANSPORT.COM
+    
+    TURN-IN REFERENCE#:  COA21A60                 (IT IS NEEDED FOR REDELIVERY)
+    
+    CTRN#: CONU2090304 / CONU2090161" id="h_61814">CMA GLO4 OI2105002</td>
+    <td width="70" class="dataline" align="center" id="i_61814"></td>
+    <td width="35" class="dataline" align="center" id="j_61814">20</td>
+    <td width="110" class="dataline" align="center" id="k_61814"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_61813">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/ca20de846a922b7531662cbcf376b530/ca20de846a922b7531662cbcf376b530" onclick="change_style(&#39;61813&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_61813">
+    <a href="http://www.focustr.us/database?sort_by=customer#61813" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=61813&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;61813&#39;)">HERREGAN ADD</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_61813">TRHU293474</td>
+    <td width="75" class="dataline" align="center" id="d_61813">FRI, JUN 25</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_61813">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_61813">891415</td>
+    <td width="70" class="dataline" align="center" id="g_61813"> </td>
+    <td width="135" class="dataline" title="CMA GLO4 OI21050273" id="h_61813">CMA GLO4 OI2105027</td>
+    <td width="70" class="dataline" align="center" id="i_61813"></td>
+    <td width="35" class="dataline" align="center" id="j_61813">20</td>
+    <td width="110" class="dataline" align="center" id="k_61813"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62619">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/83994a42b29acd9f0550430cff754715/83994a42b29acd9f0550430cff754715" onclick="change_style(&#39;62619&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62619">
+    <a href="http://www.focustr.us/database?sort_by=customer#62619" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62619&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62619&#39;)">JAECKLE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62619">MSKU383781</td>
+    <td width="75" class="dataline" align="center" id="d_62619">FRI, SEP 10</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62619">
+    <span style="width: 70px">THU, SEP 16</span>   <span style="width: 40px">07:00</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62619">B8FD25</td>
+    <td width="70" class="dataline" align="center" id="g_62619"> </td>
+    <td width="135" class="dataline" title="MAERSK LPC 3304838" id="h_62619">MAERSK LPC 3304838</td>
+    <td width="70" class="dataline" align="center" id="i_62619"></td>
+    <td width="35" class="dataline" align="center" id="j_62619">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62619"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62617">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/aae91715239a9c7ff00e0024700abed2/aae91715239a9c7ff00e0024700abed2" onclick="change_style(&#39;62617&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62617">
+    <a href="http://www.focustr.us/database?sort_by=customer#62617" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62617&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62617&#39;)">JAECKLE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62617">TGHU073306</td>
+    <td width="75" class="dataline" align="center" id="d_62617">SAT, SEP 11</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62617">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62617">24B43C</td>
+    <td width="70" class="dataline" align="center" id="g_62617"> </td>
+    <td width="135" class="dataline" title="MAERSK LPC 3304881" id="h_62617">MAERSK LPC 3304881</td>
+    <td width="70" class="dataline" align="center" id="i_62617"></td>
+    <td width="35" class="dataline" align="center" id="j_62617">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62617"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62604">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/c4b0eea13ade4d6fd279acb10cc395ef/c4b0eea13ade4d6fd279acb10cc395ef" onclick="change_style(&#39;62604&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62604">
+    <a href="http://www.focustr.us/database?sort_by=customer#62604" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62604&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62604&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62604">GAOU601623</td>
+    <td width="75" class="dataline" align="center" id="d_62604">SUN, SEP 12</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62604">
+    <span style="width: 70px">TUE, SEP 14</span>   <span style="width: 40px">&nbsp;</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62604">216000</td>
+    <td width="70" class="dataline" align="center" id="g_62604"> </td>
+    <td width="135" class="dataline" title="RV26845905 SM CN JOLIET  OI21080441" id="h_62604">RV26845905 SM CN J</td>
+    <td width="70" class="dataline" align="center" id="i_62604"></td>
+    <td width="35" class="dataline" align="center" id="j_62604">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62604"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62744">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/b817788e0582d85687f1cb26f12c938e/b817788e0582d85687f1cb26f12c938e" onclick="change_style(&#39;62744&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62744">
+    <a href="http://www.focustr.us/database?sort_by=customer#62744" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62744&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62744&#39;)">MULLIN</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62744">TGBU2596996</td>
+    <td width="75" class="dataline" align="center" id="d_62744">SAT, SEP 11</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62744">
+    <span style="width: 70px">FRI, SEP 10</span>   <span style="width: 40px">02:00</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62744">43010876</td>
+    <td width="70" class="dataline" align="center" id="g_62744"> </td>
+    <td width="135" class="dataline" title="MSC 59CSX 9831442" id="h_62744">MSC 59CSX 9831442</td>
+    <td width="70" class="dataline" align="center" id="i_62744"></td>
+    <td width="35" class="dataline" align="center" id="j_62744">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62744"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62478">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/e7e5eceae067a87eae84f9896f473025/e7e5eceae067a87eae84f9896f473025" onclick="change_style(&#39;62478&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62478">
+    <a href="http://www.focustr.us/database?sort_by=customer#62478" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62478&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62478&#39;)">NATURAL</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62478">TRLU886485</td>
+    <td width="75" class="dataline" align="center" id="d_62478">MON, SEP 13</td>
+    <!--<td width="75" class="dataline">WORK</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62478">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62478">5398</td>
+    <td width="70" class="dataline" align="center" id="g_62478"> </td>
+    <td width="135" class="dataline" title="HAPAG NS 17122521" id="h_62478">HAPAG NS 17122521</td>
+    <td width="70" class="dataline" align="center" id="i_62478"></td>
+    <td width="35" class="dataline" align="center" id="j_62478">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62478"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr><td colspan="13" style="height: 3px; font-size: 1px">&nbsp;</td></tr>
+    <tr><td colspan="13" class="headline"><a href="http://www.focustr.us/database?view=ARRI&amp;sort_by=customer&amp;highlight=" class="hd">ARRI</a></td></tr>
+    <tr>
+    <th>eFax</th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">CUSTOMER</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=container&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">CONTAINER #</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=lfd&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">LFD</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=appointment&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">DELIVERY/PICKUP</a></th>
+    <th>PULL</th>
+    <th>RATE</th>
+    <th>NOTE</th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=reference&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">REF #</a></th>
+    <th>SIZE</th>
+    <th>DRIVERS</th>
+    </tr>
+    <tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62691">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/b89114ed25e30a48af44e39fdf924c06/b89114ed25e30a48af44e39fdf924c06" onclick="change_style(&#39;62691&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62691">
+    <a href="http://www.focustr.us/database?sort_by=customer#62691" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62691&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62691&#39;)">BISHOP</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62691">TRHU155386</td>
+    <td width="75" class="dataline" align="center" id="d_62691"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62691">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62691">665505</td>
+    <td width="70" class="dataline" align="center" id="g_62691"> </td>
+    <td width="135" class="dataline" title="MSC CN  3306054" id="h_62691">MSC CN  3306054</td>
+    <td width="70" class="dataline" align="center" id="i_62691"></td>
+    <td width="35" class="dataline" align="center" id="j_62691">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62691"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62742">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/f74c55a9da872b5890bf08e1f3769981/f74c55a9da872b5890bf08e1f3769981" onclick="change_style(&#39;62742&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62742">
+    <a href="http://www.focustr.us/database?sort_by=customer#62742" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62742&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62742&#39;)">BISHOP</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62742">MSDU218527</td>
+    <td width="75" class="dataline" align="center" id="d_62742"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62742">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62742">376133</td>
+    <td width="70" class="dataline" align="center" id="g_62742"> </td>
+    <td width="135" class="dataline" title="MSC CN  3306277 " id="h_62742">MSC CN  3306277 </td>
+    <td width="70" class="dataline" align="center" id="i_62742"></td>
+    <td width="35" class="dataline" align="center" id="j_62742">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62742"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62741">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/70d225de0104e43820fde6a08985dead/70d225de0104e43820fde6a08985dead" onclick="change_style(&#39;62741&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62741">
+    <a href="http://www.focustr.us/database?sort_by=customer#62741" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62741&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62741&#39;)">BISHOP</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62741">MSDU218868</td>
+    <td width="75" class="dataline" align="center" id="d_62741"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62741">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62741">303469</td>
+    <td width="70" class="dataline" align="center" id="g_62741"> </td>
+    <td width="135" class="dataline" title="MSC CN  3306277 " id="h_62741">MSC CN  3306277 </td>
+    <td width="70" class="dataline" align="center" id="i_62741"></td>
+    <td width="35" class="dataline" align="center" id="j_62741">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62741"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62458">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/2543ff473abcd4bfc134874bdf45fcb9/2543ff473abcd4bfc134874bdf45fcb9" onclick="change_style(&#39;62458&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62458">
+    <a href="http://www.focustr.us/database?sort_by=customer#62458" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62458&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62458&#39;)">CORFU</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62458">MSMU7643200</td>
+    <td width="75" class="dataline" align="center" id="d_62458"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62458">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62458">39476332</td>
+    <td width="70" class="dataline" align="center" id="g_62458"> </td>
+    <td width="135" class="dataline" title="MSC 59CSX 9804974 " id="h_62458">MSC 59CSX 9804974 </td>
+    <td width="70" class="dataline" align="center" id="i_62458"></td>
+    <td width="35" class="dataline" align="center" id="j_62458">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62458"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62630">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/904b4cbb0a97cc6833582affe9b72ce0/904b4cbb0a97cc6833582affe9b72ce0" onclick="change_style(&#39;62630&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62630">
+    <a href="http://www.focustr.us/database?sort_by=customer#62630" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62630&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62630&#39;)">ELBE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62630">FCIU286342</td>
+    <td width="75" class="dataline" align="center" id="d_62630"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62630">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62630"></td>
+    <td width="70" class="dataline" align="center" id="g_62630"> </td>
+    <td width="135" class="dataline" title="HAPAG NS 18126221 " id="h_62630">HAPAG NS 18126221 </td>
+    <td width="70" class="dataline" align="center" id="i_62630"></td>
+    <td width="35" class="dataline" align="center" id="j_62630">20</td>
+    <td width="110" class="dataline" align="center" id="k_62630"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62507">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/9b4ce8dcad9486bd4013b3533798deff/9b4ce8dcad9486bd4013b3533798deff" onclick="change_style(&#39;62507&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62507">
+    <a href="http://www.focustr.us/database?sort_by=customer#62507" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62507&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62507&#39;)">ELBE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62507">UACU374079</td>
+    <td width="75" class="dataline" align="center" id="d_62507"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62507">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62507"></td>
+    <td width="70" class="dataline" align="center" id="g_62507"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  18126121 " id="h_62507">HAPAG NS  18126121</td>
+    <td width="70" class="dataline" align="center" id="i_62507"></td>
+    <td width="35" class="dataline" align="center" id="j_62507">20</td>
+    <td width="110" class="dataline" align="center" id="k_62507"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62550">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/4f164a4292957063450b4b019985b534/4f164a4292957063450b4b019985b534" onclick="change_style(&#39;62550&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62550">
+    <a href="http://www.focustr.us/database?sort_by=customer#62550" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62550&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62550&#39;)">ELBE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62550">FANU135942</td>
+    <td width="75" class="dataline" align="center" id="d_62550"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62550">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62550"></td>
+    <td width="70" class="dataline" align="center" id="g_62550"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  17129821 " id="h_62550">HAPAG NS  17129821</td>
+    <td width="70" class="dataline" align="center" id="i_62550"></td>
+    <td width="35" class="dataline" align="center" id="j_62550">20</td>
+    <td width="110" class="dataline" align="center" id="k_62550"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62551">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/45a25c6e22307cccfd7acc1298b4beb5/45a25c6e22307cccfd7acc1298b4beb5" onclick="change_style(&#39;62551&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62551">
+    <a href="http://www.focustr.us/database?sort_by=customer#62551" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62551&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62551&#39;)">ELBE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62551">UACU388354</td>
+    <td width="75" class="dataline" align="center" id="d_62551"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62551">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62551"></td>
+    <td width="70" class="dataline" align="center" id="g_62551"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  17129821 " id="h_62551">HAPAG NS  17129821</td>
+    <td width="70" class="dataline" align="center" id="i_62551"></td>
+    <td width="35" class="dataline" align="center" id="j_62551">20</td>
+    <td width="110" class="dataline" align="center" id="k_62551"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62629">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/8c19f9683b2ba4c153ec506987353140/8c19f9683b2ba4c153ec506987353140" onclick="change_style(&#39;62629&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62629">
+    <a href="http://www.focustr.us/database?sort_by=customer#62629" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62629&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62629&#39;)">ELBE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62629">BMOU143114</td>
+    <td width="75" class="dataline" align="center" id="d_62629"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62629">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62629"></td>
+    <td width="70" class="dataline" align="center" id="g_62629"> </td>
+    <td width="135" class="dataline" title="HAPAG NS 18126221 " id="h_62629">HAPAG NS 18126221 </td>
+    <td width="70" class="dataline" align="center" id="i_62629"></td>
+    <td width="35" class="dataline" align="center" id="j_62629">20</td>
+    <td width="110" class="dataline" align="center" id="k_62629"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62570">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/dce04bb58584ca0df51ab0456ba021c9/dce04bb58584ca0df51ab0456ba021c9" onclick="change_style(&#39;62570&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62570">
+    <a href="http://www.focustr.us/database?sort_by=customer#62570" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62570&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62570&#39;)">ESP</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62570">FSCU723323</td>
+    <td width="75" class="dataline" align="center" id="d_62570"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62570">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62570"></td>
+    <td width="70" class="dataline" align="center" id="g_62570"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  18312221 " id="h_62570">HAPAG NS  18312221</td>
+    <td width="70" class="dataline" align="center" id="i_62570"></td>
+    <td width="35" class="dataline" align="center" id="j_62570">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62570"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62463">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/4437d73650b7d5a815fb1d381bec4992/4437d73650b7d5a815fb1d381bec4992" onclick="change_style(&#39;62463&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62463">
+    <a href="http://www.focustr.us/database?sort_by=customer#62463" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62463&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62463&#39;)">LIVELY</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62463">SMCU201517</td>
+    <td width="75" class="dataline" align="center" id="d_62463"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62463">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62463"></td>
+    <td width="70" class="dataline" align="center" id="g_62463"> </td>
+    <td width="135" class="dataline" title="SM LINE GLO4 OI-211112" id="h_62463">SM LINE GLO4 OI-21</td>
+    <td width="70" class="dataline" align="center" id="i_62463"></td>
+    <td width="35" class="dataline" align="center" id="j_62463">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62463"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62564">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/376d6870fb784600e3955f92ebd5030b/376d6870fb784600e3955f92ebd5030b" onclick="change_style(&#39;62564&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62564">
+    <a href="http://www.focustr.us/database?sort_by=customer#62564" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62564&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62564&#39;)">LIVELY</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62564">DFSU281075</td>
+    <td width="75" class="dataline" align="center" id="d_62564"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62564">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62564"></td>
+    <td width="70" class="dataline" align="center" id="g_62564"> </td>
+    <td width="135" class="dataline" title="SM LINE GLO4   OI-211199" id="h_62564">SM LINE GLO4   OI-</td>
+    <td width="70" class="dataline" align="center" id="i_62564"></td>
+    <td width="35" class="dataline" align="center" id="j_62564">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62564"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62706">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/b83d560878b863679dce325c1462159d/b83d560878b863679dce325c1462159d" onclick="change_style(&#39;62706&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62706">
+    <a href="http://www.focustr.us/database?sort_by=customer#62706" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62706&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62706&#39;)">LIVELY</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62706">ZENU260477</td>
+    <td width="75" class="dataline" align="center" id="d_62706"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62706">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62706"></td>
+    <td width="70" class="dataline" align="center" id="g_62706"> </td>
+    <td width="135" class="dataline" title="ONE CN  OI-211355
+    *** SOC EMPTY INFO
+    VACCARO TRUCKING INC
+    10554 SO. MUSKEGON AVE. CHICAGO, IL.
+    60617
+    773 734-8330
+    CARRIE MEZO
+    REF# ZENBOX-VACCARO" id="h_62706">ONE CN  OI-211355
+    </td>
+    <td width="70" class="dataline" align="center" id="i_62706">OFF HIRE</td>
+    <td width="35" class="dataline" align="center" id="j_62706">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62706"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62508">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/4e0941954d6435818888aaf3ba70944d/4e0941954d6435818888aaf3ba70944d" onclick="change_style(&#39;62508&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62508">
+    <a href="http://www.focustr.us/database?sort_by=customer#62508" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62508&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62508&#39;)">LUNT</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62508">WWWU260407</td>
+    <td width="75" class="dataline" align="center" id="d_62508"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62508">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62508"></td>
+    <td width="70" class="dataline" align="center" id="g_62508"> </td>
+    <td width="135" class="dataline" title="CMA LPC OI-211168" id="h_62508">CMA LPC OI-211168</td>
+    <td width="70" class="dataline" align="center" id="i_62508"></td>
+    <td width="35" class="dataline" align="center" id="j_62508">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62508"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62196">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/64c74f0117d236dcc985a1e3d3f05d19/64c74f0117d236dcc985a1e3d3f05d19" onclick="change_style(&#39;62196&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62196">
+    <a href="http://www.focustr.us/database?sort_by=customer#62196" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62196&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62196&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62196">SLSU604033</td>
+    <td width="75" class="dataline" align="center" id="d_62196"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62196">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62196">4415388</td>
+    <td width="70" class="dataline" align="center" id="g_62196">GLO3</td>
+    <td width="135" class="dataline" title="ONE GLO4 OI21060446
+    SOC EMPTY RETURN REF#
+    
+    SESP47490
+    
+     
+    
+    SOC EMPTY RETURN DEPOT
+    
+    NLN DEPOT INC.
+    
+    3305 SOUTH LAWNDALE AVE. CHICAGO, IL 60623" id="h_62196">ONE GLO4 OI2106044</td>
+    <td width="70" class="dataline" align="center" id="i_62196">OFF HIRE</td>
+    <td width="35" class="dataline" align="center" id="j_62196">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62196"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62656">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/36124734caed43b2eb1a73d872aa9e37/36124734caed43b2eb1a73d872aa9e37" onclick="change_style(&#39;62656&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62656">
+    <a href="http://www.focustr.us/database?sort_by=customer#62656" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62656&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62656&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62656">GESU662197</td>
+    <td width="75" class="dataline" align="center" id="d_62656"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62656">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62656"></td>
+    <td width="70" class="dataline" align="center" id="g_62656"> </td>
+    <td width="135" class="dataline" title="CMA LPC OI21080344" id="h_62656">CMA LPC OI21080344</td>
+    <td width="70" class="dataline" align="center" id="i_62656"></td>
+    <td width="35" class="dataline" align="center" id="j_62656">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62656"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62657">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/f9ce8488d50501ba684a8360d8c5ed23/f9ce8488d50501ba684a8360d8c5ed23" onclick="change_style(&#39;62657&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62657">
+    <a href="http://www.focustr.us/database?sort_by=customer#62657" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62657&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62657&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62657">TRHU845918</td>
+    <td width="75" class="dataline" align="center" id="d_62657"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62657">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62657"></td>
+    <td width="70" class="dataline" align="center" id="g_62657"> </td>
+    <td width="135" class="dataline" title="CMA LPC OI21080250" id="h_62657">CMA LPC OI21080250</td>
+    <td width="70" class="dataline" align="center" id="i_62657"></td>
+    <td width="35" class="dataline" align="center" id="j_62657">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62657"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62579">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/f43a92d81bf6604028fadf8ec0e972f9/f43a92d81bf6604028fadf8ec0e972f9" onclick="change_style(&#39;62579&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62579">
+    <a href="http://www.focustr.us/database?sort_by=customer#62579" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62579&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62579&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62579">TRHU846403</td>
+    <td width="75" class="dataline" align="center" id="d_62579"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62579">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62579"></td>
+    <td width="70" class="dataline" align="center" id="g_62579"> </td>
+    <td width="135" class="dataline" title="CMA LPC OI21080038" id="h_62579">CMA LPC OI21080038</td>
+    <td width="70" class="dataline" align="center" id="i_62579"></td>
+    <td width="35" class="dataline" align="center" id="j_62579">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62579"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62658">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/9a36ae74c5df785a9f91edfee207f2ee/9a36ae74c5df785a9f91edfee207f2ee" onclick="change_style(&#39;62658&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62658">
+    <a href="http://www.focustr.us/database?sort_by=customer#62658" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62658&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62658&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62658">TRLU720584</td>
+    <td width="75" class="dataline" align="center" id="d_62658"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62658">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62658"></td>
+    <td width="70" class="dataline" align="center" id="g_62658"> </td>
+    <td width="135" class="dataline" title="CMA LPC  OI21080343" id="h_62658">CMA LPC  OI2108034</td>
+    <td width="70" class="dataline" align="center" id="i_62658"></td>
+    <td width="35" class="dataline" align="center" id="j_62658">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62658"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62523">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/ffed852cf41fc4a144a8dc931c8c699c/ffed852cf41fc4a144a8dc931c8c699c" onclick="change_style(&#39;62523&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62523">
+    <a href="http://www.focustr.us/database?sort_by=customer#62523" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62523&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62523&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62523">SMCU107211</td>
+    <td width="75" class="dataline" align="center" id="d_62523"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62523">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62523"></td>
+    <td width="70" class="dataline" align="center" id="g_62523"> </td>
+    <td width="135" class="dataline" title="SM LINE CN JOLIET  OI21080112" id="h_62523">SM LINE CN JOLIET </td>
+    <td width="70" class="dataline" align="center" id="i_62523"></td>
+    <td width="35" class="dataline" align="center" id="j_62523">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62523"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62640">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/7269e5ba54aa872cfb8c3f8a05d465be/7269e5ba54aa872cfb8c3f8a05d465be" onclick="change_style(&#39;62640&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62640">
+    <a href="http://www.focustr.us/database?sort_by=customer#62640" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62640&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62640&#39;)">NAF</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62640">TCLU402505</td>
+    <td width="75" class="dataline" align="center" id="d_62640"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62640">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62640"></td>
+    <td width="70" class="dataline" align="center" id="g_62640"> </td>
+    <td width="135" class="dataline" title="HAPAG CPSHILLER 18119221 " id="h_62640">HAPAG CPSHILLER 18</td>
+    <td width="70" class="dataline" align="center" id="i_62640"></td>
+    <td width="35" class="dataline" align="center" id="j_62640">40STD</td>
+    <td width="110" class="dataline" align="center" id="k_62640"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62722">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/77335f9fe5b485ffea95832dec4b56e8/77335f9fe5b485ffea95832dec4b56e8" onclick="change_style(&#39;62722&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62722">
+    <a href="http://www.focustr.us/database?sort_by=customer#62722" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62722&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62722&#39;)">NORTHFIELD B</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62722">GLDU9594075</td>
+    <td width="75" class="dataline" align="center" id="d_62722"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62722">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62722"></td>
+    <td width="70" class="dataline" align="center" id="g_62722"> </td>
+    <td width="135" class="dataline" title="MSC 59CSX  7387360" id="h_62722">MSC 59CSX  7387360</td>
+    <td width="70" class="dataline" align="center" id="i_62722"></td>
+    <td width="35" class="dataline" align="center" id="j_62722">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62722"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62721">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/08074bc9e013dc8842e217b5bc14de05/08074bc9e013dc8842e217b5bc14de05" onclick="change_style(&#39;62721&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62721">
+    <a href="http://www.focustr.us/database?sort_by=customer#62721" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62721&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62721&#39;)">NORTHFIELD B</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62721">TEMU1738289</td>
+    <td width="75" class="dataline" align="center" id="d_62721"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62721">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62721"></td>
+    <td width="70" class="dataline" align="center" id="g_62721"> </td>
+    <td width="135" class="dataline" title="MSC 59CSX 7387556" id="h_62721">MSC 59CSX 7387556</td>
+    <td width="70" class="dataline" align="center" id="i_62721"></td>
+    <td width="35" class="dataline" align="center" id="j_62721">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62721"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62702">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/bfac2f39fcd631248a7d3b54a7c05bed/bfac2f39fcd631248a7d3b54a7c05bed" onclick="change_style(&#39;62702&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62702">
+    <a href="http://www.focustr.us/database?sort_by=customer#62702" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62702&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62702&#39;)">NORTHFIELD B</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62702">GLDU3692325</td>
+    <td width="75" class="dataline" align="center" id="d_62702"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62702">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62702"></td>
+    <td width="70" class="dataline" align="center" id="g_62702"> </td>
+    <td width="135" class="dataline" title="MSC 59CSX  7385944" id="h_62702">MSC 59CSX  7385944</td>
+    <td width="70" class="dataline" align="center" id="i_62702"></td>
+    <td width="35" class="dataline" align="center" id="j_62702">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62702"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62628">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/f3dfed1f6179ded59b09157b6f62abc4/f3dfed1f6179ded59b09157b6f62abc4" onclick="change_style(&#39;62628&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62628">
+    <a href="http://www.focustr.us/database?sort_by=customer#62628" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62628&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62628&#39;)">THERMAMAX</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62628">HLBU340288</td>
+    <td width="75" class="dataline" align="center" id="d_62628"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62628">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62628"></td>
+    <td width="70" class="dataline" align="center" id="g_62628"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  18121821" id="h_62628">HAPAG NS  18121821</td>
+    <td width="70" class="dataline" align="center" id="i_62628"></td>
+    <td width="35" class="dataline" align="center" id="j_62628">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62628"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62654">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/c3ebc2f3955c6d1f0795826991c3dbe3/c3ebc2f3955c6d1f0795826991c3dbe3" onclick="change_style(&#39;62654&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62654">
+    <a href="http://www.focustr.us/database?sort_by=customer#62654" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62654&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62654&#39;)">WESCO</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62654">TLLU815905</td>
+    <td width="75" class="dataline" align="center" id="d_62654"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62654">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62654"></td>
+    <td width="70" class="dataline" align="center" id="g_62654"> </td>
+    <td width="135" class="dataline" title="CMA LPC  S591I21964653" id="h_62654">CMA LPC  S591I2196</td>
+    <td width="70" class="dataline" align="center" id="i_62654"></td>
+    <td width="35" class="dataline" align="center" id="j_62654">20</td>
+    <td width="110" class="dataline" align="center" id="k_62654"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62650">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/8e01e25c60014c2bc4ecd4e059dc0793/8e01e25c60014c2bc4ecd4e059dc0793" onclick="change_style(&#39;62650&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62650">
+    <a href="http://www.focustr.us/database?sort_by=customer#62650" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62650&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62650&#39;)">WIELAND</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62650">HLXU134400</td>
+    <td width="75" class="dataline" align="center" id="d_62650"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62650">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62650"></td>
+    <td width="70" class="dataline" align="center" id="g_62650"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  18132721 " id="h_62650">HAPAG NS  18132721</td>
+    <td width="70" class="dataline" align="center" id="i_62650"></td>
+    <td width="35" class="dataline" align="center" id="j_62650">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62650"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62686">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/0bb42e0c715313a050e034ba0a84d4b8/0bb42e0c715313a050e034ba0a84d4b8" onclick="change_style(&#39;62686&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62686">
+    <a href="http://www.focustr.us/database?sort_by=customer#62686" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62686&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62686&#39;)">WIELAND</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62686">FCIU657766</td>
+    <td width="75" class="dataline" align="center" id="d_62686"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62686">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62686"></td>
+    <td width="70" class="dataline" align="center" id="g_62686"> </td>
+    <td width="135" class="dataline" title="HAPAG NS 18132821 " id="h_62686">HAPAG NS 18132821 </td>
+    <td width="70" class="dataline" align="center" id="i_62686"></td>
+    <td width="35" class="dataline" align="center" id="j_62686">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62686"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62651">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/fbf30c2ec667d7a2a040e6306ad87dfe/fbf30c2ec667d7a2a040e6306ad87dfe" onclick="change_style(&#39;62651&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62651">
+    <a href="http://www.focustr.us/database?sort_by=customer#62651" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62651&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62651&#39;)">WIELAND</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62651">UACU350245</td>
+    <td width="75" class="dataline" align="center" id="d_62651"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62651">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62651"></td>
+    <td width="70" class="dataline" align="center" id="g_62651"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  18132721 " id="h_62651">HAPAG NS  18132721</td>
+    <td width="70" class="dataline" align="center" id="i_62651"></td>
+    <td width="35" class="dataline" align="center" id="j_62651">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62651"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62652">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/b08bb8478605380cd3284fc57f9e3b57/b08bb8478605380cd3284fc57f9e3b57" onclick="change_style(&#39;62652&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62652">
+    <a href="http://www.focustr.us/database?sort_by=customer#62652" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62652&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62652&#39;)">WIELAND</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62652">TCLU263398</td>
+    <td width="75" class="dataline" align="center" id="d_62652"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62652">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62652"></td>
+    <td width="70" class="dataline" align="center" id="g_62652"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  18132721 " id="h_62652">HAPAG NS  18132721</td>
+    <td width="70" class="dataline" align="center" id="i_62652"></td>
+    <td width="35" class="dataline" align="center" id="j_62652">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62652"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62649">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/35222f828cc5f51cd5a9ed42d05f17f1/35222f828cc5f51cd5a9ed42d05f17f1" onclick="change_style(&#39;62649&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62649">
+    <a href="http://www.focustr.us/database?sort_by=customer#62649" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62649&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62649&#39;)">WIELAND</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62649">DFSU100413</td>
+    <td width="75" class="dataline" align="center" id="d_62649"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62649">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62649"></td>
+    <td width="70" class="dataline" align="center" id="g_62649"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  18132721 " id="h_62649">HAPAG NS  18132721</td>
+    <td width="70" class="dataline" align="center" id="i_62649"></td>
+    <td width="35" class="dataline" align="center" id="j_62649">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62649"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62689">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/dcc207757a40b430dcaa7acaaaf6f05c/dcc207757a40b430dcaa7acaaaf6f05c" onclick="change_style(&#39;62689&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62689">
+    <a href="http://www.focustr.us/database?sort_by=customer#62689" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62689&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62689&#39;)">WIELAND</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62689">UACU400514</td>
+    <td width="75" class="dataline" align="center" id="d_62689"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62689">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62689"></td>
+    <td width="70" class="dataline" align="center" id="g_62689"> </td>
+    <td width="135" class="dataline" title="HAPAG NS 18132821 " id="h_62689">HAPAG NS 18132821 </td>
+    <td width="70" class="dataline" align="center" id="i_62689"></td>
+    <td width="35" class="dataline" align="center" id="j_62689">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62689"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_61929">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/c493b9d090ba96645342192ae466f5a2/c493b9d090ba96645342192ae466f5a2" onclick="change_style(&#39;61929&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_61929">
+    <a href="http://www.focustr.us/database?sort_by=customer#61929" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=61929&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;61929&#39;)">WORLDWIDE DO</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_61929">SEKU438437</td>
+    <td width="75" class="dataline" align="center" id="d_61929"></td>
+    <!--<td width="75" class="dataline">ARRI</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_61929">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_61929"></td>
+    <td width="70" class="dataline" align="center" id="g_61929">GLO3</td>
+    <td width="135" class="dataline" title="ONE   GLO4 OI21060475" id="h_61929">ONE   GLO4 OI21060</td>
+    <td width="70" class="dataline" align="center" id="i_61929"></td>
+    <td width="35" class="dataline" align="center" id="j_61929">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_61929"> </td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr><td colspan="13" style="height: 3px; font-size: 1px">&nbsp;</td></tr>
+    <tr><td colspan="13" class="headline"><a href="http://www.focustr.us/database?view=DISPATCHED&amp;sort_by=customer&amp;highlight=" class="hd">DISPATCHED</a></td></tr>
+    <tr>
+    <th>eFax</th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">CUSTOMER</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=container&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">CONTAINER #</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=lfd&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">LFD</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=appointment&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">DELIVERY/PICKUP</a></th>
+    <th>PULL</th>
+    <th>RATE</th>
+    <th>NOTE</th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=reference&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">REF #</a></th>
+    <th>SIZE</th>
+    <th>DRIVERS</th>
+    </tr>
+    <tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62622">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/5c864ee5b7f83af1789f729c0e110f51/5c864ee5b7f83af1789f729c0e110f51" onclick="change_style(&#39;62622&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62622">
+    <a href="http://www.focustr.us/database?sort_by=customer#62622" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62622&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62622&#39;)">BEKO</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62622">NYKU083072</td>
+    <td width="75" class="dataline" align="center" id="d_62622">FRI, SEP 10</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62622">
+    <span style="width: 70px">THU, SEP 09</span>   <span style="width: 40px">14:00</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62622">502829</td>
+    <td width="70" class="dataline" align="center" id="g_62622"> </td>
+    <td width="135" class="dataline" title="RV36848734 ONE CN 25109077 " id="h_62622">RV36848734 ONE CN </td>
+    <td width="70" class="dataline" align="center" id="i_62622"></td>
+    <td width="35" class="dataline" align="center" id="j_62622">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62622">JOSE</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62623">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/deb08e8408ff75b697ab9611ea9f11ba/deb08e8408ff75b697ab9611ea9f11ba" onclick="change_style(&#39;62623&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62623">
+    <a href="http://www.focustr.us/database?sort_by=customer#62623" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62623&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62623&#39;)">BEKO</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62623">FDCU041023</td>
+    <td width="75" class="dataline" align="center" id="d_62623">FRI, SEP 10</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62623">
+    <span style="width: 70px">THU, SEP 09</span>   <span style="width: 40px">08:00</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62623">509521</td>
+    <td width="70" class="dataline" align="center" id="g_62623"> </td>
+    <td width="135" class="dataline" title="RV96848730  ONE CN  25109081 
+    FOCZ402
+    DETENTION AT CN
+    TIME IN 12:23PM
+    TIME OUT 2:32PM
+    $83" id="h_62623">RV96848730  ONE CN</td>
+    <td width="70" class="dataline" align="center" id="i_62623"></td>
+    <td width="35" class="dataline" align="center" id="j_62623">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62623">JAVIER</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62680">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/74a8c366d6ec73971c7d1b1c38ef7bb9/74a8c366d6ec73971c7d1b1c38ef7bb9" onclick="change_style(&#39;62680&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62680">
+    <a href="http://www.focustr.us/database?sort_by=customer#62680" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62680&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62680&#39;)">BISHOP</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62680">CXDU208502</td>
+    <td width="75" class="dataline" align="center" id="d_62680">WED, SEP 08</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62680">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62680">712665</td>
+    <td width="70" class="dataline" align="center" id="g_62680"> </td>
+    <td width="135" class="dataline" title="RV16829699 MSC CN 3306052
+    FOCZ 103
+    DETENTION AT CN
+    TIME IN 4:10AM
+    TIME OUT 6:52AM
+    $145" id="h_62680">RV16829699 MSC CN </td>
+    <td width="70" class="dataline" align="center" id="i_62680"></td>
+    <td width="35" class="dataline" align="center" id="j_62680">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62680">ARMANDO</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62679">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/0f601c3b9bd47fa1bba6bca8175881b5/0f601c3b9bd47fa1bba6bca8175881b5" onclick="change_style(&#39;62679&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62679">
+    <a href="http://www.focustr.us/database?sort_by=customer#62679" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62679&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62679&#39;)">BISHOP</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62679">TLLU327881</td>
+    <td width="75" class="dataline" align="center" id="d_62679">WED, SEP 08</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62679">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62679">845227</td>
+    <td width="70" class="dataline" align="center" id="g_62679"> </td>
+    <td width="135" class="dataline" title="RV76829700 MSC CN  3306051" id="h_62679">RV76829700 MSC CN </td>
+    <td width="70" class="dataline" align="center" id="i_62679"></td>
+    <td width="35" class="dataline" align="center" id="j_62679">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62679">MOISES</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62609">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/f3650e2d25c0d85c11db35cd6e704a1f/f3650e2d25c0d85c11db35cd6e704a1f" onclick="change_style(&#39;62609&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62609">
+    <a href="http://www.focustr.us/database?sort_by=customer#62609" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62609&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62609&#39;)">BISHOP</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62609">CAXU645772</td>
+    <td width="75" class="dataline" align="center" id="d_62609">THU, SEP 09</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62609">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62609">E0410E</td>
+    <td width="70" class="dataline" align="center" id="g_62609"> </td>
+    <td width="135" class="dataline" title="MSC LPC 3305848" id="h_62609">MSC LPC 3305848</td>
+    <td width="70" class="dataline" align="center" id="i_62609"></td>
+    <td width="35" class="dataline" align="center" id="j_62609">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62609">ARMANDO</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62695">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/6789612124e65d1ccd195fd00498a2e2/6789612124e65d1ccd195fd00498a2e2" onclick="change_style(&#39;62695&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62695">
+    <a href="http://www.focustr.us/database?sort_by=customer#62695" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62695&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62695&#39;)">FROZEN</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62695">SZLU9316899</td>
+    <td width="75" class="dataline" align="center" id="d_62695">SAT, SEP 11</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62695">
+    <span style="width: 70px">FRI, SEP 10</span>   <span style="width: 40px">07:00</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62695">26495900</td>
+    <td width="70" class="dataline" align="center" id="g_62695"> </td>
+    <td width="135" class="dataline" title="MSC 59CSX  7386725 " id="h_62695">MSC 59CSX  7386725</td>
+    <td width="70" class="dataline" align="center" id="i_62695"></td>
+    <td width="35" class="dataline" align="center" id="j_62695">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62695">JOSE, JOSE</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62526">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/346a00b33f9c1ead0eea58450e67880f/346a00b33f9c1ead0eea58450e67880f" onclick="change_style(&#39;62526&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62526">
+    <a href="http://www.focustr.us/database?sort_by=customer#62526" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62526&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62526&#39;)">HERREGAN ADD</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62526">CWWU221638</td>
+    <td width="75" class="dataline" align="center" id="d_62526">THU, SEP 09</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62526">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62526">F8E7D5</td>
+    <td width="70" class="dataline" align="center" id="g_62526"> </td>
+    <td width="135" class="dataline" title="CMA LPC OI21060921
+    CON GLOBAL INDUSTRIES
+    
+    6401 W. 46TH STREET
+    
+    FOREST VIEW IL 60402
+    
+    HOURS: M-F: 8AM -4:30PM
+    
+    TEL: 708-484-0900 MAIN OFFICE PHONE
+    
+    ARACELI (EQC) 708-749-6734
+    
+    NANCY (EQC) 708-749-6732
+    
+    ACCEPTANCE CODE: POCGI33557 " id="h_62526">CMA LPC OI21060921</td>
+    <td width="70" class="dataline" align="center" id="i_62526">OFF HIRE</td>
+    <td width="35" class="dataline" align="center" id="j_62526">20</td>
+    <td width="110" class="dataline" align="center" id="k_62526">ADRIAN</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62528">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/8ea8e7e97ed4a82ec1e9db6a3fc9d2c5/8ea8e7e97ed4a82ec1e9db6a3fc9d2c5" onclick="change_style(&#39;62528&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62528">
+    <a href="http://www.focustr.us/database?sort_by=customer#62528" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62528&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62528&#39;)">HERREGAN ADD</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62528">MSEU210158</td>
+    <td width="75" class="dataline" align="center" id="d_62528">FRI, SEP 10</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62528">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62528">AE5A18</td>
+    <td width="70" class="dataline" align="center" id="g_62528">OFF HIRE</td>
+    <td width="135" class="dataline" title="CMA LPC OI21070815
+    CONGLOBAL 6401 W. 46TH STREET FOREST VIEW IL 60402
+    REDELIVERY REF: POCGI32870 @ CGI NO EXP" id="h_62528">CMA LPC OI21070815</td>
+    <td width="70" class="dataline" align="center" id="i_62528"></td>
+    <td width="35" class="dataline" align="center" id="j_62528">20</td>
+    <td width="110" class="dataline" align="center" id="k_62528">FIGUS</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62549">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/b6e251cd4cbed30550452a7b04f97038/b6e251cd4cbed30550452a7b04f97038" onclick="change_style(&#39;62549&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62549">
+    <a href="http://www.focustr.us/database?sort_by=customer#62549" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62549&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62549&#39;)">HYPRO PLATTE</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62549">CAIU808014</td>
+    <td width="75" class="dataline" align="center" id="d_62549">MON, SEP 13</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62549">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62549">5607</td>
+    <td width="70" class="dataline" align="center" id="g_62549"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  17141421 " id="h_62549">HAPAG NS  17141421</td>
+    <td width="70" class="dataline" align="center" id="i_62549"></td>
+    <td width="35" class="dataline" align="center" id="j_62549">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62549">GILBERT</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62462">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/7024bf9e980c02e76038b76cc1e39b47/7024bf9e980c02e76038b76cc1e39b47" onclick="change_style(&#39;62462&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62462">
+    <a href="http://www.focustr.us/database?sort_by=customer#62462" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62462&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62462&#39;)">LUNT</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62462">TEMU147933</td>
+    <td width="75" class="dataline" align="center" id="d_62462">THU, SEP 02</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62462">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62462">8078313</td>
+    <td width="70" class="dataline" align="center" id="g_62462">FLIP 50</td>
+    <td width="135" class="dataline" title="RV86842602  HAPAG GLO4 OI-210974
+    " id="h_62462">RV86842602  HAPAG </td>
+    <td width="70" class="dataline" align="center" id="i_62462"></td>
+    <td width="35" class="dataline" align="center" id="j_62462">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62462">MOISES</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62675">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/ead5f27e660d2176c665f28f044b1732/ead5f27e660d2176c665f28f044b1732" onclick="change_style(&#39;62675&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62675">
+    <a href="http://www.focustr.us/database?sort_by=customer#62675" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62675&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62675&#39;)">MATCO</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62675">CMAU0461389</td>
+    <td width="75" class="dataline" align="center" id="d_62675">FRI, SEP 10</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62675">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62675">16394012</td>
+    <td width="70" class="dataline" align="center" id="g_62675"> </td>
+    <td width="135" class="dataline" title="RV46838405	 CMA 59CSX 234712" id="h_62675">RV46838405	 CMA 59</td>
+    <td width="70" class="dataline" align="center" id="i_62675"></td>
+    <td width="35" class="dataline" align="center" id="j_62675">20</td>
+    <td width="110" class="dataline" align="center" id="k_62675">FIGUS</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62522">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/3064cb0dfe0a02a237f84ecf49eb8173/3064cb0dfe0a02a237f84ecf49eb8173" onclick="change_style(&#39;62522&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62522">
+    <a href="http://www.focustr.us/database?sort_by=customer#62522" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62522&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62522&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62522">SMCU121400</td>
+    <td width="75" class="dataline" align="center" id="d_62522">WED, SEP 08</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62522">
+    <span style="width: 70px">THU, SEP 09</span>   <span style="width: 40px">09:00</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62522">800957</td>
+    <td width="70" class="dataline" align="center" id="g_62522"> </td>
+    <td width="135" class="dataline" title="RV66832817 SM CN JOLIET OI21080111" id="h_62522">RV66832817 SM CN J</td>
+    <td width="70" class="dataline" align="center" id="i_62522"></td>
+    <td width="35" class="dataline" align="center" id="j_62522">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62522">GILBERT</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62605">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/f2be00dbee0739f254362a8dc422ed81/f2be00dbee0739f254362a8dc422ed81" onclick="change_style(&#39;62605&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62605">
+    <a href="http://www.focustr.us/database?sort_by=customer#62605" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62605&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62605&#39;)">MAXXAIR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62605">SMCU123841</td>
+    <td width="75" class="dataline" align="center" id="d_62605"></td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62605">
+    <span style="width: 70px">MON, SEP 13</span>   <span style="width: 40px">09:00</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62605">791806</td>
+    <td width="70" class="dataline" align="center" id="g_62605"> </td>
+    <td width="135" class="dataline" title="RV76845895 SM CN JOLIET  OI21080441" id="h_62605">RV76845895 SM CN J</td>
+    <td width="70" class="dataline" align="center" id="i_62605"></td>
+    <td width="35" class="dataline" align="center" id="j_62605">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62605">GILBERT</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62743">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/c3517d03e54c5cae98b88a0a9211ad19/c3517d03e54c5cae98b88a0a9211ad19" onclick="change_style(&#39;62743&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62743">
+    <a href="http://www.focustr.us/database?sort_by=customer#62743" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62743&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62743&#39;)">MULLIN</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62743">MEDU5552767</td>
+    <td width="75" class="dataline" align="center" id="d_62743">FRI, SEP 10</td>
+    <!--<td width="75" class="dataline">DISPATCHED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62743">
+    <span style="width: 70px">FRI, SEP 10</span>   <span style="width: 40px">12:00</span>
+       </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62743">46136332</td>
+    <td width="70" class="dataline" align="center" id="g_62743"> </td>
+    <td width="135" class="dataline" title="MSC 59CSX 9831442" id="h_62743">MSC 59CSX 9831442</td>
+    <td width="70" class="dataline" align="center" id="i_62743"></td>
+    <td width="35" class="dataline" align="center" id="j_62743">3AXLE</td>
+    <td width="110" class="dataline" align="center" id="k_62743">SIRENIO</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr><td colspan="13" style="height: 3px; font-size: 1px">&nbsp;</td></tr>
+    <tr><td colspan="13" class="headline"><a href="http://www.focustr.us/database?view=DROPPED&amp;sort_by=customer&amp;highlight=" class="hd">DROPPED</a></td></tr>
+    <tr>
+    <th>eFax</th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">CUSTOMER</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=container&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">CONTAINER #</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=lfd&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">LFD</a></th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=appointment&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">DELIVERY/PICKUP</a></th>
+    <th>PULL</th>
+    <th>RATE</th>
+    <th>NOTE</th>
+    <th><a href="http://www.focustr.us/database?view=&amp;sort_by=reference&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;highlight=" class="th">REF #</a></th>
+    <th>SIZE</th>
+    <th>DRIVERS</th>
+    </tr>
+    <tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62345">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/fd272bdebeff79c58a1193b1c34124c0/fd272bdebeff79c58a1193b1c34124c0" onclick="change_style(&#39;62345&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62345">
+    <a href="http://www.focustr.us/database?sort_by=customer#62345" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62345&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62345&#39;)">BARR</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62345">UACU542129</td>
+    <td width="75" class="dataline" align="center" id="d_62345">TUE, SEP 07</td>
+    <!--<td width="75" class="dataline">DROPPED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62345">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62345">1459</td>
+    <td width="70" class="dataline" align="center" id="g_62345"> </td>
+    <td width="135" class="dataline" title="HAPAG NS  17104021 " id="h_62345">HAPAG NS  17104021</td>
+    <td width="70" class="dataline" align="center" id="i_62345"></td>
+    <td width="35" class="dataline" align="center" id="j_62345">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62345">ARMANDO</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    <table cellspacing="0" cellpadding="2" border="0" bgcolor="#FFFFFF">
+    <tbody><tr>
+    
+    
+    
+    
+    <td width="60" class="dataline" align="center" id="a_62260">
+    
+    
+               <a href="http://www.focustr.us/attachment/img/0/73304ec3c0ffbbf92a003718bb2fb35a/73304ec3c0ffbbf92a003718bb2fb35a" onclick="change_style(&#39;62260&#39;)">
+                          <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+                          <a href="http://www.focustr.us/attachment/img/0/c8442b3550fada26f8662734d766be2c/c8442b3550fada26f8662734d766be2c" onclick="change_style(&#39;62260&#39;)">
+                           <img src="./Focus Trucking_ Database_files/att.gif" border="0">
+                          </a>
+               
+    
+    
+    </td>
+    
+    
+    <td width="110" class="dataline" align="center" id="b_62260">
+    <a href="http://www.focustr.us/database?sort_by=customer#62260" name="" onclick="window.open(&#39;/database?db_function=edit&amp;rec_id=62260&amp;view=&amp;sort_by=customer&amp;search_by=&amp;search_term=&amp;start_date=&amp;stop_date=&amp;s_id=f6e1865f9c6d148b41ccbc655bb5f97d&#39;,&#39;_target&#39;,&#39;height=675,width=602,status=no,toolbar=no,menubar=no,location=no,scrollbars=no&#39;) &amp; change_style(&#39;62260&#39;)">DISCOUNT TRO</a></td>
+    <td width="85" class="dataline" align="left" style="padding-left:15px" id="c_62260">CAAU665925</td>
+    <td width="75" class="dataline" align="center" id="d_62260">FRI, SEP 03</td>
+    <!--<td width="75" class="dataline">DROPPED</td>//-->
+    
+    
+    
+    <td width="115" class="dataline" align="center" id="e_62260">
+    </td>
+    
+    
+    <td width="67" class="dataline" align="center" id="f_62260">14210D</td>
+    <td width="70" class="dataline" align="center" id="g_62260"> </td>
+    <td width="135" class="dataline" title="MAERSK LPC  CAAU6659252" id="h_62260">MAERSK LPC  CAAU66</td>
+    <td width="70" class="dataline" align="center" id="i_62260"></td>
+    <td width="35" class="dataline" align="center" id="j_62260">40HQ</td>
+    <td width="110" class="dataline" align="center" id="k_62260">JAVIER</td>
+    
+    
+    
+    </tr>
+    </tbody></table>
+    
+    
+    <script language="javascript">
+    <!--
+    setInterval("chk_mail()", 60000);
+    
+    function open_reload(guid, rec_id, s_id) {
+    window.location.replace("/database?view=&sort_by=customer&search_by=&search_term=&start_date=&stop_date=&highlight="+rec_id+"&download_guid="+guid+"&s_id="+s_id);
+    }
+    
+    function force_download() {
+    window.location.href('/attachment/img/0//');
+    }
+    
+    //-->
+    </script>
+    
+    
+    
+    <br><br><br>
+    </div>
+    
+    
+    
+    </body></html>
